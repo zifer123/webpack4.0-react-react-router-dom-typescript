@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
+import { hot } from 'react-hot-loader/root'; // 热加载
 import App from '../App';
-import Home from '../Component/Home';
-import About from '../Component/About';
+import Home from '../component/Home';
+import About from '../component/About';
 
-export default class AppRouter extends Component {
+class AppRouter extends Component {
   render(): React.ReactNode {
     return (
       <HashRouter>
@@ -15,3 +16,4 @@ export default class AppRouter extends Component {
     );
   }
 }
+export default hot(AppRouter); // 热加载特性， 打包不需要

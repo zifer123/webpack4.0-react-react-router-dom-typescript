@@ -13,13 +13,21 @@
       "dom"
     ],
     "jsx": "react",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@": ["./src"]
-    }
+      "@/*": ["./src/*"],
+      "@/baseStyles/*": ["./src/baseStyles/*"],
+      "@/components/*": ["./src/components/*"]
+    },
+    "typeRoots": [
+      "node",
+      "node_modules/@types",
+      "./typings"
+    ]
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "typings"
   ],
   "exclude": [
     "node_modules",

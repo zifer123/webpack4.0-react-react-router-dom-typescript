@@ -5,7 +5,7 @@ export default class App extends Component {
   render(): React.ReactNode {
     return (
       <div>
-        <header>头部</header>
+        <header>aaa</header>
         <main>
           <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
